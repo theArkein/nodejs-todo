@@ -4,7 +4,6 @@ let ObjectId = mongodb.ObjectID;
 
 let connectDB = new Promise((resolve,reject)=>{    
     let dbURL = "mongodb+srv://leosarad100:%21nodeApp1.0%21@cluster0-kqdo1.gcp.mongodb.net/todo?retryWrites=true&w=majority";
-    let localURL = "mongodb://127.0.0.1:27017";
     let dbName = "todo";
     MongoClient.connect( dbURL, {useNewUrlParser:true,useUnifiedTopology:true}, (error,client)=>{
         if(error){

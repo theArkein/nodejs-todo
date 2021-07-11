@@ -1,14 +1,11 @@
-console.log("App Started");
-
 let express = require("express");
 let routes = require("./src/routes/route.js");
-let hbs = require("hbs");
 
 let app = express();
+const PORT = process.env.PORT || 5000
 
 // App Variables
 app.variables = {
-    port : process.env.port || 3000,
     publicDirectoryPath : __dirname+"/public",
     title : "Todo App",
 }
@@ -24,6 +21,6 @@ app.use(express.json());
 routes(app)
 
 // Listen on port 3000
-app.listen(process.env.port || 3000,()=>{
-    console.log("Listening To Port 3000");
+app.listen( PORT, ()=>{
+    console.log("Listening to port: ", PORT);
 })
