@@ -2,4 +2,4 @@
 
 A  simple todo list app built with node.js.
 
-<a href="https://thearkein-nodejs-todo.herokuapp.com/" target="_balnk">View Deployment</a>
+<a href="https://thearkein-nodejs-todoapp.herokuapp.com/" target="_balnk">View Deployment</a>
